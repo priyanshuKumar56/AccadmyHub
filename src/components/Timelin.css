@@ -1,0 +1,7 @@
+.set_image_prot {
+  width: 100%;
+}
+.set_image_prot img {
+  width: 100%;
+  filter: saturate(5);
+}

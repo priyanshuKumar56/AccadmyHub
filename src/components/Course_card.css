@@ -1,0 +1,263 @@
+.flex_contan_card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(223, 244, 242);
+}
+.midle_cant {
+  display: flex;
+  flex-direction: column;
+}
+.title_name {
+  padding-inline-start: 5px;
+}
+.make_small {
+  font-size: small;
+}
+.max_hight {
+  max-height: 300px;
+}
+.people_revive {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-between;
+}
+.course_detail {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: small;
+  padding: 3px;
+  justify-content: space-between;
+}
+.course_detail div,
+span {
+  padding: 2px;
+}
+.people_revive .rating {
+  border: 1px solid rgb(214, 214, 214);
+  padding: 3px;
+}
+.people_revive .learner span:nth-child(2) {
+  margin-left: 4px;
+}
+.max_price_v {
+  margin-left: 3px;
+  text-decoration: line-through;
+  color: rgb(199, 198, 198);
+  font-size: small;
+}
+.rupee_ic {
+  font-size: small;
+  padding-left: 3px;
+  margin: 4px;
+}
+
+.price_value {
+  font-size: large;
+  padding: 3px;
+}
+.button_s {
+  font-size: medium;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+  display: flex;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  color: white;
+  background: #6225e6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #fbc638;
+}
+
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 12px;
+}
+
+.cta span {
+  transform: skewX(15deg);
+}
+
+.arrow:nth-child(2) {
+  width: 20px;
+  margin-left: 13px;
+  position: relative;
+  top: 2%;
+}
+
+/**************SVG****************/
+
+path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #fbc638;
+  }
+  100% {
+    fill: white;
+  }
+}
+/* Styles for screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+  .max_price_v {
+    margin-left: 1px;
+    font-size: x-small;
+  }
+  .rupee_ic {
+    padding-left: 1px;
+    margin: 2px;
+    font-size: x-small;
+  }
+  .price_value {
+    font-size: medium;
+    padding: 2px;
+  }
+  .button_s {
+    font-size: small;
+  }
+  .cta {
+    padding: 6px 8px;
+    font-size: small;
+  }
+  .arrow:nth-child(2) {
+    width: 15px;
+    margin-left: 10px;
+  }
+  .arrow svg {
+    width: 20px;
+    height: 15px;
+  }
+}
+
+/* Styles for screens larger than 768px */
+@media only screen and (min-width: 768px) {
+  .max_price_v {
+    margin-left: 3px;
+    font-size: small;
+  }
+  .rupee_ic {
+    padding-left: 3px;
+    margin: 4px;
+    font-size: small;
+  }
+  .price_value {
+    font-size: large;
+    padding: 3px;
+  }
+  .button_s {
+    font-size: medium;
+  }
+  .cta {
+    padding: 8px 10px;
+    font-size: large;
+  }
+  .arrow:nth-child(2) {
+    width: 20px;
+    margin-left: 13px;
+  }
+}
+/* Course_card.css */
+
+/* Grid Item */
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Portfolio Item */
+.portfolio-item {
+  background-color: #ffffff; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px); /* Lift on hover */
+}
+
+/* Image */
+.img-center {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Title */
+.title_name h4 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Details */
+.course_detail {
+  margin-top: 10px;
+  color: #666666;
+}
+
+.course_detail div {
+  margin-bottom: 5px;
+}
+
+.course_detail span {
+  font-weight: bold;
+  color: #333333;
+}
+@media (max-width: 1400px) {
+  .responsive-image {
+    display: none;
+  }
+}
+/* Button */

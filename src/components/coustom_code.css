@@ -1,0 +1,116 @@
+.bg_color_in {
+  background: linear-gradient(
+    189.16deg,
+    rgb(27 1 116) 13.57%,
+    rgb(144, 118, 231) 98.38%
+  );
+}
+.container_code {
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 900px) {
+  .container_code {
+    z-index: 1;
+    margin: 2rem;
+  }
+  .transform_img .cover_thiss {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .transform_img {
+    left: 0px;
+  }
+}
+
+.transform_img > * {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+  transform: rotateY(-20deg) rotateX(20deg);
+  left: 20px;
+}
+
+.above_mok1_style {
+  margin-right: 1rem;
+}
+.svg_set {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.set_zindex {
+  z-index: 9999;
+}
+.secont_svg {
+  bottom: 0px;
+  filter: blur(20px);
+  position: relative;
+}
+.svg_first {
+  filter: blur(20px);
+  width: 100%;
+  bottom: 100px;
+  position: absolute;
+}
+.star_svg {
+  position: relative;
+  bottom: 120px;
+  height: 500px;
+}
+.above_mok1 {
+  background: linear-gradient(
+    124deg,
+    rgba(91, 64, 64, 0.012),
+    rgba(233, 14, 61, 0.353)
+  );
+
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  /* right: 92px; */
+  top: 45px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.above_mok2 {
+  background: linear-gradient(
+    24deg,
+    rgba(240, 234, 190, 0.341),
+    rgba(228, 219, 219, 0.029)
+  );
+  top: 45px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+
+  border: 1px solid rgba(246, 222, 222, 0.3);
+}
+.another_mok {
+  background: rgba(0, 0, 0, 0.026);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+
+  border: 1px solid rgba(246, 222, 222, 0.3);
+}
+.cover_this {
+  position: relative;
+  bottom: 130px;
+}
+.transform_img {
+  left: 80px;
+}
+.move_editor_btn {
+  padding: 1rem;
+  background-color: #1360ef;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.move_editor_btn:hover {
+  background-color: red;
+}
