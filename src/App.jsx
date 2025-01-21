@@ -9,15 +9,18 @@ import Clients from "./Pages/Clients";
 // import "./assets/css/theme_min.css";
 import "@ionic/react/css/core.css";
 import "./assets/css/line-awesome.min.css";
-
+import { Routes, Route } from "react-router-dom";
 import Course from "./Pages/Course";
 
 import About from "./Pages/About_Us_&_feature";
 import CodeEdi from "./Pages/CodeEditor_page";
 import BlogSection from "./Pages/Blog";
 import Footer from "./Pages/Footer";
+import Documentation from "./Pages/Documentaion";
+import Home from "./Home";
 
 // import HorizontalAnimation from "./Pages/Horizontal_View";
+// import React from 'react'
 
 function App() {
   const [visible, setVisible] = useState(true);
@@ -41,14 +44,10 @@ function App() {
         </div>
       )}
 
-      <Header />
-      <Landing_p />
-      <Course />
-      <About_sevices />
-      <CodeEdi />
-      <About />
-      <Clients />
-      <BlogSection />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/doc" element={<Documentation />} />
+      </Routes>
 
       <Footer />
     </>

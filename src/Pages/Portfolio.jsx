@@ -5,7 +5,7 @@ import CourseData from "../Data/course_data";
 import CourseItem from "../components/CourseItem";
 import CourseFilter from "../components/CourseFilter";
 import CourseAnimation from "../components/Head_course_name";
-import "../components/Course_card.css";
+// import "../components/Course_card.css";
 
 import AOS from "aos";
 

@@ -1,0 +1,152 @@
+/* Documentation.css */
+.documentation {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.nav-header {
+  background-color: #2f855a;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  color: white;
+  margin-left: 0.5rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.sidebar-container {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: sticky;
+  top: 5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.topic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topic-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.topic-item:hover {
+  background-color: #f5f5f5;
+}
+
+.topic-item.active {
+  background-color: #f0fdf4;
+  color: #2f855a;
+}
+
+.content-area {
+  flex: 1;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.feature-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #2f855a;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.code-block {
+  background-color: #1a202c;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.code-block pre {
+  overflow-x: auto;
+  font-family: monospace;
+  margin: 0;
+}
+
+.subsections-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.subsection-item {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
