@@ -61,7 +61,7 @@ const CourseListing = () => {
   return (
     <div className="course-listing">
       <div className="course-header">
-        <h2>Featured Courses</h2>
+        <h2>Our Featured Courses</h2>
         <p>Start your learning journey today</p>
 
         {/* Search Bar */}
@@ -131,7 +131,7 @@ const CourseListing = () => {
 
               <div className="course-footer">
                 <div className="price">${course.price}</div>
-                <button className="enroll-btn">Enroll Now</button>
+                <button className="enroll-btn">Enroll</button>
               </div>
             </div>
           </div>
